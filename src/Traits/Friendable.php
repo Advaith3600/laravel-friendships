@@ -403,7 +403,7 @@ trait Friendable
      *
      * @return \Illuminate\Database\Eloquent\Collection
      */
-    private function findFriendships($status = null, $groupSlug = '')
+    public function findFriendships($status = null, $groupSlug = '')
     {
 
         $query = Friendship::where(function ($query) {
